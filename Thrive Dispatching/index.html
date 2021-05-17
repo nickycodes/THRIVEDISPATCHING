@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Thrive Dispatching</title>
+</head>
+<body>
+    <!--Header Sections-->
+    <header>
+        <nav class="top-nav">
+            <h1><a href="index.html" id="home-link">Thrive Dispatching LLC</a></h1>
+            <ul>
+                <div class="dropdown-container">
+                    <button id="dropdown-button">
+                    <a href="#">About</a> 
+                    <i class="fas fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <ul>
+                        <a href="#services">Services</a>
+                        <a href="#goals">Goals</a>
+                        <a href="#hours">Hours</a>
+                    </ul> 
+                    </div>
+                </div>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="https://www.facebook.com/thrivedispatching"><i class="fab fa-facebook fa-2x"></i></a></li>
+                <li><a href="#" id="english-button">English</a></li>
+                <li><a href="#" id="spanish-button">Espanol</a></li>
+            </ul>
+                
+            <button id="hamburger-button">
+            <i class="fas fa-bars fa-2x"></i>
+            </button>
+            
+            <div class="hamburger-container">
+                <div class="hamburger-content">
+                <ul>
+                    <a href="#services">Services</a>
+                    <a href="#goals">Goals</a>
+                    <a href="#hours">Hours</a>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="https://www.facebook.com/thrivedispatching" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-2x"></i></a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Espanol</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--End of Header Section-->
+    <div class="main">
+        <!--Landing Section-->
+        <div class="landing">
+            <div class="whitespace">
+            </div>
+            <div class="image-container">
+            <img src="./IMG/Thrive Dispatching Logo Web.jpg" alt="">
+            </div>
+        </div>
+        <!--End of Landing Section-->
+
+        <!--Start of About Section One-->
+        <div class="about-one" id="services">
+            <div class="about-one-left">
+                <div class="top">
+                    <i class="fas fa-people-carry fa-4x"></i>
+                    <div class="text">
+                        <h1 id="first-header">Types of Loads</h1>
+                        <p id="first-paragraph">At Thrive we do our best to help you find the loads that you need. We offer assistance with finding a variety of loads including hotshots, car hauling, refrigerated and dry vans.</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <i class="fas fa-headset fa-4x"></i>
+                    <div class="text">
+                        <h1 id="second-header">We Speak Your Language</h1>
+                        <p id="second-paragraph">Being in a diverse industry means being able to provide service in different languages. Our team currently has English and Spanish speakers on deck ready to help your business <span> THRIVE.</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-one-right">
+                <img src="./IMG/briana-tozour-QipZr29K7Mw-unsplash.jpg" alt="">
+            </div>
+        </div>
+        <!--End of About Section One-->
+
+        <!--About Section Two-->
+        <div class="about-two" id="goals">
+            <div class="goals-photo">
+                <img src="./IMG/charles-deluvio-Lks7vei-eAg-unsplash.jpg" alt="">
+            </div>
+            <div class="about-goals-right">
+                <h1 id="third-header">Our Goals</h1>
+                <p id="third-paragraph">You’re passionate about the business you’ve built, and you would never want it to be headed in the wrong direction. Let us help you navigate the world of logistics with convenience and confidence. </p>
+            </div>
+        </div>
+
+        <!--End of About Section Two-->
+
+        <!--Start of Hours Section-->
+        <div class="hours" id="hours">
+            <h1 id="fourth-header">HOURS</h1>
+            <ul>
+                <li id="monday">Mon - 9:00 am - 5:00Pm</li>
+                <li id="tuesday">Teu - 9:00 am - 5:00Pm</li>
+                <li id="wednesday">Wed - 9:00 am - 5:00Pm</li>
+                <li id="thursday">Thu - 9:00 am - 5:00Pm</li>
+                <li id="friday">Fri - 9:00 am - 5:00Pm</li>
+                <li id="saturday">Sat Appointment Only</li>
+                <li id="sunday">Sun Closed</li>
+            </ul>
+        </div>
+
+        <!--End of Hours Section-->
+
+        <!--Start of Contact Section-->
+            <div class="contact" id="contact">
+                <h1>Contact</h1>
+                <div class="form-container">
+                        <form action="https://formsubmit.co/thrivedispatching@gmail.com" method="POST">
+                            <input type="text" name="name" required placeholder="Name...">
+                            <input type="email" name="email" required placeholder="Email*">
+                            <input type="text" name="MC#" required placeholder="MC#...">
+                            <input type="text" name="DOT#" required placeholder="DOT#...">
+                            <input type="text" name="Message" id="inputMessage" placeholder="Message...">
+                            <button type="submit">
+                                Send
+                            </button>
+                        </form>
+                </div>
+            </div>
+        <!--End of Contact Section-->
+    </div>
+    <footer class="subscribe" id="subscribe">
+        <div class="subscribe-section">
+            <input type="email" placeholder="Join our mailing list..." class="subscribe-input">
+            <button class="subscribe-button">Subscribe</button>
+        </div>
+        <p>Designed and Developed by NickyCodes</p>
+    </footer>
+</body>
+<script src="./script.js"></script>
+<script src="https://kit.fontawesome.com/0b5bd12e6d.js" crossorigin="anonymous"></script>
+</html>
