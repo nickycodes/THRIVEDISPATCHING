@@ -192,7 +192,7 @@ header {
 
 	.image-container {
 		height: 90%;
-		width: 100%;
+		width: 100vw;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -200,7 +200,7 @@ header {
 
 		img {
 			height: 100%;
-			width: 65%;
+			width: 80%;
 		}
 	}
 }
@@ -412,7 +412,7 @@ header {
 }
 
 .subscribe {
-	height: 20vh;
+	height: 30vh;
 	max-height: auto;
 	width: 100%;
 	background: map-get($colors, "Main");
@@ -429,7 +429,7 @@ header {
 		justify-content: center;
 	}
 
-	.subscribe-input {
+	.email {
 		font-family: "Cabin", sans-serif;
 		padding: 1em;
 		width: 25vw;
@@ -438,24 +438,40 @@ header {
 		border: none;
 	}
 
-	.subscribe-input:focus {
+	.email:focus {
 		outline: none;
 	}
 
-	.subscribe-button {
+	.button {
 		font-family: "Cabin", sans-serif;
 		padding: 1em;
 		border: none;
 		border-radius: 5px;
 	}
 
-	.subscribe-button:hover {
+	.button:hover {
 		cursor: pointer;
 		background: map-get($colors, "Accent");
 	}
 
-	.subscribe-button:focus {
+	.button:focus {
 		outline: none;
+	}
+
+	.indicates-required {
+		color: map-get($colors, "Accent");
+	}
+
+	.mail-chimp-fields {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 1em;
+	}
+
+	h1 {
+		color: map-get($colors, "Accent");
+		text-align: center;
 	}
 }
 
@@ -492,6 +508,7 @@ header {
 
 	.landing {
 		height: 120vh;
+		width: 100vw;
 		max-height: auto;
 
 		.whitespace {
@@ -501,7 +518,7 @@ header {
 		}
 
 		.image-container {
-			height: 90%;
+			height: 100%;
 			width: 100%;
 			display: flex;
 			align-items: center;
@@ -515,17 +532,13 @@ header {
 		}
 	}
 
-	.subscribe-section {
+	.mail-chimp-fields {
 		flex-direction: column;
 		margin-bottom: 2em;
 
-		.subscribe-input {
+		.email {
 			width: 80%;
 			margin: 1em;
-		}
-
-		.subscribe-button {
-			width: 50%;
 		}
 	}
 }

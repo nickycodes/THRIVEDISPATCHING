@@ -15,22 +15,22 @@
             <ul>
                 <div class="dropdown-container">
                     <button id="dropdown-button">
-                    <a href="#">About</a> 
+                    <a href="#" id="aboutMain">About</a> 
                     <i class="fas fa-caret-down"></i>
                     </button>
                     <div class="dropdown-content">
                     <ul>
-                        <a href="#services">Services</a>
-                        <a href="#goals">Goals</a>
-                        <a href="#hours">Hours</a>
+                        <a href="#services" class="services" id="servicesMain">Services</a>
+                        <a href="#goals" class="goals" id="goalsMain">Goals</a>
+                        <a href="#hours" class="horas" id="hoursMain">Hours</a>
                     </ul> 
                     </div>
                 </div>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#subscribe">Subscribe</a></li>
+                <li><a href="#contact" class="menu-contact" id="contactMain">Contact</a></li>
+                <li><a href="#subscribe" class="subscribe" id="subscribeMain">Subscribe</a></li>
                 <li><a href="https://www.facebook.com/thrivedispatching"><i class="fab fa-facebook fa-2x"></i></a></li>
-                <li><a href="#" id="english-button">English</a></li>
-                <li><a href="#" id="spanish-button">Espanol</a></li>
+                <li><a href="#" class="english-button" id="englishMain">English</a></li>
+                <li><a href="#" class="spanish-button">Espanol</a></li>
             </ul>
                 
             <button id="hamburger-button">
@@ -40,14 +40,15 @@
             <div class="hamburger-container">
                 <div class="hamburger-content">
                 <ul>
-                    <a href="#services">Services</a>
-                    <a href="#goals">Goals</a>
-                    <a href="#hours">Hours</a>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#subscribe">Subscribe</a></li>
+                    <a href="#services" class="services" id="servicesHamburger">Services</a>
+                    <a href="#goals" class="goals" id="goalsHamburger">Goals</a>
+                    <a href="#hours" class="horas" id="hoursHamburger">Hours</a>
+                    
+                <li><a href="#contact" class="menu-contact" id="contactHamburger">Contact</a></li>
+                <li><a href="#subscribe" class="subscribe" id="subscribeHamburger">Subscribe</a></li>
                 <li><a href="https://www.facebook.com/thrivedispatching" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook fa-2x"></i></a></li>
-                <li><a href="#">English</a></li>
-                <li><a href="#">Espanol</a></li>
+                <li><a href="#" class="english-button" id="englishHamburger">English</a></li>
+                <li><a href="#" class="spanish-button">Espanol</a></li>
                 </ul>
                 </div>
             </div>
@@ -107,7 +108,7 @@
             <h1 id="fourth-header">HOURS</h1>
             <ul>
                 <li id="monday">Mon - 9:00 am - 5:00Pm</li>
-                <li id="tuesday">Teu - 9:00 am - 5:00Pm</li>
+                <li id="tuesday">Tue - 9:00 am - 5:00Pm</li>
                 <li id="wednesday">Wed - 9:00 am - 5:00Pm</li>
                 <li id="thursday">Thu - 9:00 am - 5:00Pm</li>
                 <li id="friday">Fri - 9:00 am - 5:00Pm</li>
@@ -120,7 +121,7 @@
 
         <!--Start of Contact Section-->
             <div class="contact" id="contact">
-                <h1>Contact</h1>
+                <h1 class="contact-header">Contact</h1>
                 <div class="form-container">
                         <form action="https://formsubmit.co/thrivedispatching@gmail.com" method="POST">
                             <input type="text" name="name" required placeholder="Name...">
@@ -137,10 +138,26 @@
         <!--End of Contact Section-->
     </div>
     <footer class="subscribe" id="subscribe">
-        <div class="subscribe-section">
-            <input type="email" placeholder="Join our mailing list..." class="subscribe-input">
-            <button class="subscribe-button">Subscribe</button>
+        <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="https://gmail.us1.list-manage.com/subscribe/post?u=97dad92a07849daa7693bbc02&amp;id=5b77232444" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <h1>Join our Mailing List</h1>
+    <div class="mail-chimp-fields">
+    <div class="mc-field-group">
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email...">
+    </div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_97dad92a07849daa7693bbc02_5b77232444" tabindex="-1" value=""></div>
+        <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
         </div>
+    </div>
+    </form>
+    </div>
+    
+    <!--End mc_embed_signup-->  
         <p>Designed and Developed by NickyCodes</p>
     </footer>
 </body>

@@ -206,7 +206,7 @@ header {
 
 .landing .image-container {
   height: 90%;
-  width: 100%;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,7 +221,7 @@ header {
 
 .landing .image-container img {
   height: 100%;
-  width: 65%;
+  width: 80%;
 }
 
 .about-one {
@@ -479,7 +479,7 @@ header {
 }
 
 .subscribe {
-  height: 20vh;
+  height: 30vh;
   max-height: auto;
   width: 100%;
   background: #12113d;
@@ -503,7 +503,7 @@ header {
           justify-content: center;
 }
 
-.subscribe .subscribe-input {
+.subscribe .email {
   font-family: "Cabin", sans-serif;
   padding: 1em;
   width: 25vw;
@@ -512,24 +512,46 @@ header {
   border: none;
 }
 
-.subscribe .subscribe-input:focus {
+.subscribe .email:focus {
   outline: none;
 }
 
-.subscribe .subscribe-button {
+.subscribe .button {
   font-family: "Cabin", sans-serif;
   padding: 1em;
   border: none;
   border-radius: 5px;
 }
 
-.subscribe .subscribe-button:hover {
+.subscribe .button:hover {
   cursor: pointer;
   background: #c19653;
 }
 
-.subscribe .subscribe-button:focus {
+.subscribe .button:focus {
   outline: none;
+}
+
+.subscribe .indicates-required {
+  color: #c19653;
+}
+
+.subscribe .mail-chimp-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1em;
+}
+
+.subscribe h1 {
+  color: #c19653;
+  text-align: center;
 }
 
 /*MEDIA QUERIES*/
@@ -561,6 +583,7 @@ header {
   }
   .landing {
     height: 120vh;
+    width: 100vw;
     max-height: auto;
   }
   .landing .whitespace {
@@ -569,7 +592,7 @@ header {
     background: #fff;
   }
   .landing .image-container {
-    height: 90%;
+    height: 100%;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -586,19 +609,16 @@ header {
     height: 100%;
     width: 100%;
   }
-  .subscribe-section {
+  .mail-chimp-fields {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin-bottom: 2em;
   }
-  .subscribe-section .subscribe-input {
+  .mail-chimp-fields .email {
     width: 80%;
     margin: 1em;
-  }
-  .subscribe-section .subscribe-button {
-    width: 50%;
   }
 }
 
